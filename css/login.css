@@ -1,0 +1,94 @@
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.tela{ 
+    background-color: white;
+    display: flex;
+    border-radius: 25px;
+    height: 40vh;
+    width: 55vw;
+}
+
+p {color: black;}
+
+::placeholder{color: black;}
+
+.olho img{
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    height: 100%;
+    width: auto
+}
+
+.login{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.form input{
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    width: 97%;
+    height: 4vh;
+    padding: 5px;
+    padding-left: 17px;
+    font-weight: bold;
+    border-style: none;
+}
+
+.email{
+    margin-bottom: 35px;
+}
+
+.cadastre-se{
+    display: flex;
+    justify-content: end;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.cadastre-se a{
+    color: #e99c2d;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.lembre-se{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.lembre-se input{
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.button {
+    display: flex;
+    justify-content: end;
+}
+
+.button button{
+    background-color: #e99c2d;
+    border-radius: 500px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    height: 5vh;
+    width: 7vw;
+    margin-top: 10px;
+}
+

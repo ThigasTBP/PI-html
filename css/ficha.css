@@ -1,0 +1,49 @@
+section{
+    display: flex;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section button{
+    background-color: #e99c2d;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    height: 40px;
+    width: 120px;
+    border-radius: 50px;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.ficha{
+    display: flex;
+    width: 60vw;
+    justify-content: right;
+}
+
+.ficha img{
+    width: auto;
+    height: 95vh;
+    display: flex;
+
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 30vw;
+}
+
+.btn button{
+    margin-top: 20px;
+}
