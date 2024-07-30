@@ -21,7 +21,7 @@ p {color: black;}
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
     height: 100%;
-    width: auto
+    width: auto;
 }
 
 .login{

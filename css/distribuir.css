@@ -1,0 +1,71 @@
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: space-evenly;
+    width: auto;
+    height: auto;
+}
+
+.campo{
+    display: flex;
+    align-content: space-evenly;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna img{
+    height: 100%;
+    width: auto;
+    background-color:whitesmoke;
+}
+
+.atributo {
+    display: flex;
+    height: 100px;
+    width: auto;
+    margin: 50px;
+}
+
+.symbol{
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+.valor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.mod{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.mod button{
+    height: 45px;
+    width: 100px;
+    border-style: none;
+    background-color: #e99c2d;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.mod img{
+    height: 100%;
+    width: auto;
+    background:none;
+}
+
