@@ -1,7 +1,6 @@
 section{
     display: flex;
     width: 90vw;
-    /* min-height: 60%; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 3vh;
@@ -15,10 +14,13 @@ section img{
     border-radius: 10px;
 }
 
-section button{
+section a{
     color: black;
     background-color: #e99c2d;
-    border-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 60px;
     width: 200px;
     border-radius: 50px;
@@ -59,7 +61,7 @@ section div{
         margin-bottom: 20px;
     }
 
-    section button{
+    section a{
         height: 40px;
         width: 120px;
         font-size: 12px;
