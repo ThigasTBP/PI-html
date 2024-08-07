@@ -13,7 +13,11 @@ $(document).ready(function(){
     var sab = $('#sabedoria').val()
     var car = $('#carisma').val()
 
+    console.log(nome)
+    console.log(raca)
+
     if (nome != '' && raca != '' && classe != '' && forca != '' && des != '' && con != '' && int != '' && sab != '' && car !='') {
+        console.log('teste'),
         $.ajax({
             url: 'http://localhost:3333/personagem',
             method: 'POST',
@@ -26,14 +30,21 @@ $(document).ready(function(){
                 constituicao: con,
                 inteligencia: int,
                 sabedoria: sab,
-                carisma: car 
+                carisma: car,
+                cod_raca: raca,
+                cod_classe: classe
+
             },
+            
             success: function() {
                 alert('perssonagem adicionado com sucesso')
                 $('#form').each(function () {
                     this.reset()
                 })
                 location.reload()
+            },
+            error: function(error){
+                console.log(error)
             }
         })
     } else {
