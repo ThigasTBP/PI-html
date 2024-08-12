@@ -23,24 +23,24 @@
                         <img src="./src/olho.jpg" alt="">
                     </div>
                     <div class="login">
-                        <form action="" class="form">
+                        <form id="form" method="post" class="form">
                             <div>
-                                <input  class="email" type="email" placeholder="E-mail">
+                                <input id="email" class="email" type="email" placeholder="E-mail">
                             </div>
                             <div>
-                                <input class="password" type="password" placeholder="Crie uma senha">
+                                <input id="password" class="password" type="text" placeholder="Crie uma senha">
                             </div>
                             <div>
-                                <input class="confirm" type="confirm" placeholder="Confirme sua senha">
+                                <input id="confirm" class="confirm" type="text" placeholder="Confirme sua senha">
+                            </div>
+                            <div class="lembre-se">
+                                <input class="teste" type="checkbox" name="lembre" id="">
+                                <p>Lembre-se de mim</p>
+                            </div>
+                            <div class="button">
+                                <button id="btnlogin" type="submit">Criar</button>
                             </div>
                         </form>
-                        <div class="lembre-se">
-                            <input class="teste" type="checkbox" name="lembre" id="">
-                            <p>Lembre-se de mim</p>
-                        </div>
-                        <div class="button">
-                            <button type="submit">Login</button>
-                        </div>
                     </div>
                 </div>
 
@@ -50,6 +50,9 @@
             <p>Desenvolvido por Thiago</p>
         </footer>
     </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/cadastro.js"></script>
 </body>
 
 </html>

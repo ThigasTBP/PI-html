@@ -1,4 +1,4 @@
-section{
+section {
     display: flex;
     width: 90vw;
     margin-left: auto;
@@ -8,13 +8,13 @@ section{
     justify-content: space-evenly;
 }
 
-section img{
+section img {
     width: 40vw;
     height: auto;
     border-radius: 10px;
 }
 
-section a{
+section a {
     color: black;
     background-color: #e99c2d;
     text-decoration: none;
@@ -28,7 +28,7 @@ section a{
     font-weight: 700;
 }
 
-section div{
+section div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,29 +43,30 @@ section div{
     width: 25%;
 } */
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 850px) {
 
-    section div{
+    section div {
         font-size: 16px;
     }
 }
 
 @media screen and (max-width: 770px) {
-    section{
+    section {
         flex-direction: column;
         align-items: center;
     }
-    section img{
+
+    section img {
         width: 60vw;
         min-width: 250px;
         margin-bottom: 20px;
     }
 
-    section a{
+    section a {
         height: 40px;
         width: 120px;
         font-size: 12px;
         margin-top: 5%;
     }
-    
+
 }

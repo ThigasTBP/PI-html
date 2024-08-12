@@ -1,11 +1,11 @@
 section{
     display: flex;
     justify-content: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    align-items: center;
+    flex: 1
 }
 
-.tela{ 
+.tela{
     background-color: white;
     display: flex;
     border-radius: 25px;

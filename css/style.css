@@ -5,18 +5,20 @@
 
 html {
     height: 100%;
+    width: 100%;
 }
 
 body {
     background-color: #2e2e2e;
     height: 100%;
     color: white;
+    min-height: 100%;
+    max-width: 100vw;
 }
 
 #pagina {
     min-height: 100%;
-    max-width: 100vw;
-    position: relative;
+    max-width: 100%,
 }
 
 .principal {
@@ -27,7 +29,8 @@ body {
 }
 
 .corpo {
-    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -35,6 +38,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 header img {
@@ -43,7 +47,7 @@ header img {
     height: auto;
 }
 
-header a{
+header a {
     margin-right: 1.33vw;
     background-color: #e99c2d;
     color: white;
@@ -69,14 +73,14 @@ footer {
     width: 100%;
 }
 
-footer p{
+footer p {
     padding: 15px;
 }
 
 @media screen and (max-width: 550px) {
     header img {
-       height: auto;
-       width: 70vw;
+        height: auto;
+        width: 70vw;
     }
 
     header button {
@@ -90,4 +94,3 @@ footer p{
         height: 5vh;
     }
 }
-
