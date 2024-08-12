@@ -20,14 +20,12 @@ body {
 }
 
 .principal {
-    margin-left: auto;
-    margin-right: auto;
     min-height: 100%;
     position: relative;
 }
 
 .corpo {
-    padding-bottom: 80px;
+     padding-bottom: 80px;
 }
 
 header {
