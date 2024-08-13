@@ -27,12 +27,9 @@ body {
 }
 
 .corpo {
-<<<<<<< HEAD
     display: flex;
     flex-direction: column;
-=======
-     padding-bottom: 80px;
->>>>>>> a4029d012b1e4f114310ab02bb5aa08838e97b64
+    padding-bottom: 80px;
 }
 
 header {

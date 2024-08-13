@@ -1,13 +1,8 @@
 .total{
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
     align-items: center;
-    flex: 1
-=======
-    height: 80vh;
-    align-items: center;
->>>>>>> a4029d012b1e4f114310ab02bb5aa08838e97b64
+    height: 80vh
 }
 
 .tela{
