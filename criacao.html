@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T20</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/raca.css">
+    <link rel="stylesheet" href="./css/criacao.css">
 </head>
 
 <body>
@@ -16,15 +16,252 @@
                 <img src="./src/Tormenta-20-icon.png" alt="">
                 <a href="./login.html">Login</a>
             </header>
-            <section>
-                <form action="">
-                    <div id="option" class="option"> <div id="selecao1" class="selecao1"></div> <div id="selecao2" class="selecao2"></div> </div>
-                    <div>
-                        <div id="descricao" class="descricao"> </div>
-                        <button class="change" type="button"></button>
-                    </div>
+            <section class="escolha">
 
-                </form>
+                <div id="option" class="option">
+                        <div id="selecao1" class="selecao1"></div>
+                        <div id="selecao2" class="selecao2 mostra"></div>
+                </div>
+                <div class="teste">
+                    <div id="descricao" class="descricao"> </div>
+                    <button id="change" class="change" type="submit"> mudar tela </button>
+                </div>
+            </section>
+            <hr>
+            <section class="geracao">
+                <div>
+                    <h1>Geração de atributos</h1>
+                </div>
+                <div class="tipo">
+                    <div class="opcao">
+                        <a href="./distribuir.html">Distribuir 20 pontos</a>
+                        <p>Distribuir 20 pontos <br> entre os atributos</p>
+                    </div>
+                    <div class="opcao">
+                        <a href="">Gerações aleatorias</a>
+                        <p>Gerar valores <br> aleatoria e distribuir</p>
+                    </div>
+                </div>
+            </section>
+            <section class="aleatoria">
+                <div>
+                    <h1>Geração aleatória</h1>
+                </div>
+                <div class="campo">
+                    <div class="coluna">
+                        <div class="atributo" id="forca">
+                            <div class="valor">
+                                <div id="calcforca">
+                                    <h2> 0 + 0 = </h2>
+                                </div>
+                                <div>
+                                    <h3>Força</h3>
+                                </div>
+                            </div>
+                            <div class="symbol">
+                                <img src="./src/forca.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="atributo" id="destreza">
+                            <div class="valor">
+                                <div id="calcdestreza">
+                                    <h2> 0 + 0 = </h2>
+                                </div>
+                                <div>
+                                    <h3>Destreza</h3>
+                                </div>
+                            </div>
+                            <div class="symbol">
+                                <img src="./src/running-man.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="atributo" id="constituicao">
+                            <div class="valor">
+                                <div id="calcconstituicao">
+                                    <h2> 0 + 0 = </h2>
+                                </div>
+                                <div>
+                                    <h3>Constituição</h3>
+                                </div>
+                            </div>
+                            <div class="symbol">
+                                <img src="./src/healing.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="coluna">
+                        <div class="atributo" id="inteligencia">
+                            <div class="valor">
+                                <div id="calcinteligencia">
+                                    <h2> 0 + 0 = </h2>
+                                </div>
+                                <div>
+                                    <h3>Inteligencia</h3>
+                                </div>
+                            </div>
+                            <div class="symbol">
+                                <img src="./src/brain.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="atributo" id="sabedoria">
+                            <div class="valor">
+                                <div id="calcsabedoria">
+                                    <h2> 0 + 0 = </h2>
+                                </div>
+                                <div>
+                                    <h3>Sabedoria</h3>
+                                </div>
+                            </div>
+                            <div class="symbol">
+                                <img src="./src/owl.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="atributo" id="carisma">
+                            <div class="valor">
+                                <div id="calccarisma">
+                                    <h2> 0 + 0 = </h2>
+                                </div>
+                                <div>
+                                    <h3>Carisma</h3>
+                                </div>
+                            </div>
+                            <div class="symbol">
+                                <img src="./src/charisma.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="boxpontos">
+                    <h1>| <span id="valor1"> ? </span> | <span id="valor2"> ? </span> | <span id="valor3"> ? </span> |
+                        <span id="valor4"> ? </span> | <span id="valor5"> ? </span> | <span id="valor6"> ? </span> |
+                    </h1>
+
+                </div>
+            </section>
+            <section class="distribuir">
+                <div>
+                    <h1>Geração distribuir 20 pontos</h1>
+                </div>
+                <div class="campo">
+                    <div class="coluna">
+                        <div class="atributo">
+                            <div class="valor">
+                                <div id="calcforca">
+                                    <h2> 0 + 10 + 0 = </h2>
+                                </div>
+                                <div>
+                                    <h3>Força</h3>
+                                </div>
+                            </div>
+                            <div class="symbol">
+                                <img src="./src/forca.png" alt="">
+                            </div>
+                            <div class="mod">
+                                <button id="pforca" type="button"><img src="./src/add.png" alt=""></button>
+                                <button id="mforca" type="button"><img src="./src/minus.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="atributo">
+                            <div class="valor">
+                                <div id="calcdestreza">
+                                    <h2> 0 + 10 + 0 = </h2>
+                                </div>
+                                <div>
+                                    <h3>Destreza</h3>
+                                </div>
+                            </div>
+                            <div class="symbol">
+                                <img src="./src/running-man.png" alt="">
+                            </div>
+                            <div class="mod">
+                                <button id="pdestreza" type="button"><img src="./src/add.png" alt=""></button>
+                                <button id="mdestreza" type="button"><img src="./src/minus.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="atributo">
+                            <div class="valor">
+                                <div id="calcconstituicao">
+                                    <h2> 0 + 10 + 0 = </h2>
+                                </div>
+                                <div>
+                                    <h3>Contituição</h3>
+                                </div>
+                            </div>
+                            <div class="symbol">
+                                <img src="./src/healing.png" alt="">
+                            </div>
+                            <div class="mod">
+                                <button id="pconstituicao" type="button"><img src="./src/add.png" alt=""></button>
+                                <button id="mconstituicao" type="button"><img src="./src/minus.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coluna">
+                        <div class="atributo">
+                            <div class="valor">
+                                <div id="calcinteligencia">
+                                    <h2> 0 + 10 + 0 = </h2>
+                                </div>
+                                <div>
+                                    <h3>Inteligencia</h3>
+                                </div>
+                            </div>
+                            <div class="symbol">
+                                <img src="./src/brain.png" alt="">
+                            </div>
+                            <div class="mod">
+                                <button id="pinteligencia" type="button"><img src="./src/add.png" alt=""></button>
+                                <button id="minteligencia" type="button"><img src="./src/minus.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="atributo">
+                            <div class="valor">
+                                <div id="calcsabedoria">
+                                    <h2> 0 + 10 + 0 = </h2>
+                                </div>
+                                <div>
+                                    <h3>Sabedoria</h3>
+                                </div>
+                            </div>
+                            <div class="symbol">
+                                <img src="./src/owl.png" alt="">
+                            </div>
+                            <div class="mod">
+                                <button id="psabedoria" type="button"><img src="./src/add.png" alt=""></button>
+                                <button id="msabedoria" type="button"><img src="./src/minus.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="atributo">
+                            <div class="valor">
+                                <div id="calccarisma">
+                                    <h2> 0 + 10 + 0 = </h2>
+                                </div>
+                                <div>
+                                    <h3>Carisma</h3>
+                                </div>
+                            </div>
+                            <div class="symbol">
+                                <img src="./src/charisma.png" alt="">
+                            </div>
+                            <div class="mod">
+                                <button id="pcarisma" type="button"><img src="./src/add.png" alt=""></button>
+                                <button id="mcarisma" type="button"><img src="./src/minus.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="boxpontos">
+                    <h1>20</h1>
+                </div>
+                <div>
+                    <a href="">confirmar</a>
+                </div>
             </section>
         </div>
         <footer>
@@ -34,6 +271,8 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="./js/criacao.js"></script>
+    <script type="text/javascript" src="./js/distribuir.js"></script>
+    <script type="text/javascript" src="./js/dados.js"></script>
 </body>
 
 </html>
