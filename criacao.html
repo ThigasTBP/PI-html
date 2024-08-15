@@ -19,12 +19,15 @@
             <section class="escolha">
 
                 <div id="option" class="option">
-                        <div id="selecao1" class="selecao1"></div>
-                        <div id="selecao2" class="selecao2 mostra"></div>
+                    <div id="selecao1" class="selecao1"></div>
+                    <div id="selecao2" class="selecao2"></div>
                 </div>
-                <div class="teste">
+                <div class="folha">
                     <div id="descricao" class="descricao"> </div>
-                    <button id="change" class="change" type="submit"> mudar tela </button>
+                    <div class="btns">
+                        <button id="changec" class="changec" type="button">escolher classe</button>
+                        <button id="changer" class="changer" type="button">escolher raça</button>
+                    </div>
                 </div>
             </section>
             <hr>
@@ -34,15 +37,16 @@
                 </div>
                 <div class="tipo">
                     <div class="opcao">
-                        <a href="./distribuir.html">Distribuir 20 pontos</a>
-                        <p>Distribuir 20 pontos <br> entre os atributos</p>
+                        <button id="opcaodis" type="button">Distribuir 20 pontos</button>
+                        <p>Distribuir 20 pontos entre os atributos</p>
                     </div>
                     <div class="opcao">
-                        <a href="">Gerações aleatorias</a>
-                        <p>Gerar valores <br> aleatoria e distribuir</p>
+                        <button id="opcaoale" type="button">Gerações aleatorias</button>
+                        <p>Gerar valores aleatorimente e atribui-los</p>
                     </div>
                 </div>
             </section>
+            <hr>
             <section class="aleatoria">
                 <div>
                     <h1>Geração aleatória</h1>
@@ -137,11 +141,10 @@
                         </div>
                     </div>
                 </div>
-                <div id="boxpontos">
-                    <h1>| <span id="valor1"> ? </span> | <span id="valor2"> ? </span> | <span id="valor3"> ? </span> |
-                        <span id="valor4"> ? </span> | <span id="valor5"> ? </span> | <span id="valor6"> ? </span> |
-                    </h1>
-
+                <div  class="boxpontos" id="boxpontos">
+                    <h2><span id="valor1"> ? </span> | <span id="valor2"> ? </span> | <span id="valor3"> ? </span> |
+                        <span id="valor4"> ? </span> | <span id="valor5"> ? </span> | <span id="valor6"> ? </span>
+                    </h2>
                 </div>
             </section>
             <section class="distribuir">
@@ -256,13 +259,12 @@
                         </div>
                     </div>
                 </div>
-                <div id="boxpontos">
-                    <h1>20</h1>
-                </div>
-                <div>
-                    <a href="">confirmar</a>
+                <div class="boxpontos" id="boxpontos">
+                    <h2>20</h2>
+                 
                 </div>
             </section>
+            <button id="btnconfirm" class="btnconfirm" type="button">Confirmar</button>
         </div>
         <footer>
             <p>Desenvolvido por Thiago</p>
@@ -270,9 +272,7 @@
     </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="./js/criacao.js"></script>
-    <script type="text/javascript" src="./js/distribuir.js"></script>
-    <script type="text/javascript" src="./js/dados.js"></script>
+    <script src="./js/criacao.js"></script>
 </body>
 
 </html>

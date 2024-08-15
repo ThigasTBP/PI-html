@@ -1,54 +1,74 @@
+section {
+    height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
 .option {
+    padding: 5px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-content: center;
     background-color: whitesmoke;
     border-radius: 10px;
-    border-style: solid;
-    border-color: violet;
-    width: 48%;
-
+    width: 45%;
+    height: 90%;
 }
 
-.option ::-webkit-scrollbar {
-    width: 10px;
+.selecao1,
+.selecao2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
-.option::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;}
 
 .selecao1 button,
-.selecao2 button,
-.change {
-    width: 31%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 15px;
+.selecao2 button {
+    flex: 1 1 calc(33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 1000px;
     background-color: #e99c2d;
     border-style: solid;
-    margin: 5px;
     font-size: 20px;
     font-weight: bolder;
-
 }
 
-.teste {
-    width: 48%;
+.btns button {
+    padding: 10px;
+    width: 35%;
+    background-color: #e99c2d;
+    border-style: solid;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 1000px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20%;
+}
+
+.folha {
+    width: 45%;
+    height: 91%;
 }
 
 .descricao {
-    border-color: blueviolet;
+    height: 80%;
+    border-radius: 10px;
+    border-color: whitesmoke;
     border-style: solid;
+    padding: 10px;
 }
 
 .escolha {
     display: flex;
-    border-color: blue;
-    border-style: solid;
+    align-items: center;
     justify-content: space-evenly;
 }
 
@@ -61,35 +81,51 @@
 
 .geracao h1 {
     text-decoration: underline;
-    font-size: 35px;
+    font-size: 50px;
     padding: 2vh;
 }
 
 .tipo {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
     width: 100%;
     height: 100%;
 }
 
-.opcao a {
+.opcao button {
     display: flex;
     background-color: #e99c2d;
     color: black;
     padding: 25px;
+    font-size: 30px;
     border-radius: 100px;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
     text-decoration: none;
     font-weight: bolder;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.opcao{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }
 
 .opcao p {
+    display: flex;
     background-color: grey;
     padding: 25px;
     border-radius: 25px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-weight: lighter;
+
 }
 
 .aleatoria,
@@ -97,31 +133,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: auto;
-    margin-bottom: auto;
     justify-content: space-evenly;
-    width: auto;
-    height: auto;
 }
 
 .aleatoria h1,
 .distribuir h1 {
     text-decoration: underline;
     font-size: 35px;
-    padding: 2vh;
 }
 
 .campo {
     display: flex;
+    width: 100%;
+    height: 60%;
     align-content: space-evenly;
+    justify-content: space-evenly;
 }
 
 .coluna {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: space-evenly;
 }
 
-.coluna img {
+.atributo img {
     height: 100%;
     width: auto;
     background-color: whitesmoke;
@@ -129,9 +166,9 @@
 
 .atributo {
     display: flex;
-    height: 100px;
-    width: auto;
-    margin: 50px;
+    height: 30%;
+    width: 100%;
+    justify-content: center;
 }
 
 .symbol {
@@ -145,7 +182,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    width: 30%;
 }
 
 .mod {
@@ -164,10 +201,42 @@
     background-color: #e99c2d;
     border-radius: 50px;
     padding: 5px;
+    height: 45%;
 }
 
 .mod img {
     height: 100%;
     width: auto;
     background: none;
+}
+
+.boxpontos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 10%;
+    width: 100%;
+    align-items: center;
+    font-size: 25px;
+
+}
+.boxpontos h2{
+    border-radius: 100px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 15px;
+}
+
+.btnconfirm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e99c2d;
+    border-radius: 1000px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 1%;
+    align-self: center;
+    justify-self: center;
 }
